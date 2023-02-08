@@ -9,6 +9,13 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
+:root {
+  --primary: #0d6efd;
+  --dark: #21252f;
+  --body: #888;
+  --white: #ffffff;
+  --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
 img,
 picture,
 svg,
@@ -28,6 +35,17 @@ a{
   right: 45px;
   bottom: 45px;
   z-index: 99;
+}
+.card-effect {
+  box-shadow: var(--box-shadow);
+  background-color: var(--white);
+  padding: 25px;
+  transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+  box-shadow: none;
+  transform: translateY(5px);
 }
 #loader-wrapper {
     position: fixed;
@@ -154,3 +172,4 @@ a{
     transform: translateY(-100%);
     transition: all 0.3s 1s ease-out;
   }
+  
